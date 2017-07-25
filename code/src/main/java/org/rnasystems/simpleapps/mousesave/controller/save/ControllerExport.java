@@ -16,8 +16,10 @@ public class ControllerExport implements ActionListener{
 	private JButton buttonSave;
 	private JTable table;	
 	private ControllerSaveMouseCoordinates controllerSaveMouseCoordinates;
+	private CoordinatesView coordinatesView;
 
 	public ControllerExport(CoordinatesView coordinatesView , ControllerSaveMouseCoordinates controllerSaveMouseCoordinates){
+		this.coordinatesView = coordinatesView;
 		buttonSave=coordinatesView.getButtonSave();
 		buttonSave.addActionListener(this);		
 		table = coordinatesView.getTable();
@@ -32,7 +34,8 @@ public class ControllerExport implements ActionListener{
 			if(controllerSaveMouseCoordinates!=null){
 				controllerSaveMouseCoordinates.stop();
 			}
-			
+
+			coordinatesView.setAlwaysOnTop(false);
 			
 			JDialog.setDefaultLookAndFeelDecorated(true);
 			
@@ -41,7 +44,6 @@ public class ControllerExport implements ActionListener{
 		    
 		    String selection = ""+JOptionPane.showInputDialog(null, "Select type of export",
 		        "Coordinates", JOptionPane.QUESTION_MESSAGE, null, selectionValues, initialSelection);
-		    
 		    
 		    switch(ExportType.valueOf(selection)){
 		    
@@ -54,6 +56,7 @@ public class ControllerExport implements ActionListener{
 				break;
 			}
 			
+			coordinatesView.setAlwaysOnTop(true);
 		    
 		    if(controllerSaveMouseCoordinates!=null){
 		    	controllerSaveMouseCoordinates.start();

@@ -7,7 +7,7 @@
 	<version>1.0.0</version>
 	<packaging>jar</packaging>
 
-	<name>easy-mouse-save</name>
+	<name>super-mouse-recorder</name>
 	<url>http://maven.apache.org</url>
 
 	<properties>
@@ -25,8 +25,8 @@
 
 		<dependency>
 			<groupId>org.jnativehook</groupId>
-			<artifactId>Jnativehook</artifactId>
-			<version>1.0.0</version>
+			<artifactId>JNativeHook</artifactId>
+			<version>1.1.4</version>
 		</dependency>
 
 		<dependency>

@@ -23,6 +23,7 @@ public class CoordinatesView extends JFrame{
 
 	
 	public CoordinatesView(){
+		this.setTitle("Mouse Coordinates Recorder by JRichardsz");
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		setBounds(100,100,450,300);
 		
@@ -31,22 +32,22 @@ public class CoordinatesView extends JFrame{
 		
 		buttonStart = new JButton("");
 		buttonStart.setIcon(new ImageIcon(CoordinatesView.class.getResource("/org/rnasystems/simpleapps/mousesave/resources/img/start.png")));
-		buttonStart.setToolTipText("clear");
+		buttonStart.setToolTipText("start recording");
 		panel.add(buttonStart);
 		
 		buttonStop = new JButton("");
 		buttonStop.setIcon(new ImageIcon(CoordinatesView.class.getResource("/org/rnasystems/simpleapps/mousesave/resources/img/stop.png")));
-		buttonStop.setToolTipText("clear");
+		buttonStop.setToolTipText("clear coordinates");
 		panel.add(buttonStop);
 		
 		buttonClear = new JButton("");
 		buttonClear.setIcon(new ImageIcon(CoordinatesView.class.getResource("/org/rnasystems/simpleapps/mousesave/resources/img/clear.png")));
-		buttonClear.setToolTipText("stop");
+		buttonClear.setToolTipText("stop recording");
 		panel.add(buttonClear);
 		
 		buttonSave = new JButton("");
 		buttonSave.setIcon(new ImageIcon(CoordinatesView.class.getResource("/org/rnasystems/simpleapps/mousesave/resources/img/save.png")));
-		buttonSave.setToolTipText("start");
+		buttonSave.setToolTipText("save coordinates");
 		panel.add(buttonSave);
 
 		ArrayList<String> columnNames = new ArrayList<String>();

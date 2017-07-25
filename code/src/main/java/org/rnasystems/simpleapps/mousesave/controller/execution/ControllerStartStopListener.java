@@ -30,12 +30,16 @@ public class ControllerStartStopListener implements ActionListener{
 		if(e.getSource()==jButtonStart){
 			
 			if(controllerSaveMouseCoordinates!=null){
+				jButtonStart.setEnabled(false);
+				jButtonStop.setEnabled(true);
 				controllerSaveMouseCoordinates.start();
 			}
 
 		}else if(e.getSource()==jButtonStop){
 			
 			if(controllerSaveMouseCoordinates!=null){
+				jButtonStart.setEnabled(true);
+				jButtonStop.setEnabled(false);
 				controllerSaveMouseCoordinates.stop();
 			}
 
