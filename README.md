@@ -10,7 +10,7 @@ I do this because I needed some pixels coordinates of my screen or monitor.
 
 # Usage 
 
-- Download the zip file : [super-mouse-recorder.zip](https://github.com/jrichardsz/appdesktop-super-mouse-recorder/blob/master/app/app.zip?raw=true)
+- Download the zip file : [super-mouse-recorder.zip](https://github.com/jrichardsz/super-mouse-recorder/blob/master/app/super-mouse-recorder.zip?raw=true)
 - Unzip it.
 - Doble click on **super-mouse-recorder.jar** file. If you have java installed, the application will be launched.
 
