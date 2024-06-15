@@ -100,7 +100,7 @@ This will create a folder called **app** inside of src folder.
 
 ## Authors
 
-* **Richard Osmar Leon Ingaruca** - *JRichardsz* - [contact me](http://jrichardsz.github.io)
+*JRichardsz* - [contact me](http://jrichardsz.github.io)
 
 ## License
 
